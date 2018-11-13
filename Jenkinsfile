@@ -28,7 +28,6 @@ pipeline {
       }
       steps {
         sh 'py.test --verbose --junit-xml test-reports/results.xml sources/test_calc.py'
-        svn 'http://svn.code.sf.net/p/docutils/code/trunk docutils-code'
       }
     }
     stage('Deliver') {
