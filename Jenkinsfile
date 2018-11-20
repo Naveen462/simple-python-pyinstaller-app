@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       agent {
         docker {
-          image 'pyenv'
+          image 'pyenv:latest'
         }
 
       }
