@@ -9,7 +9,8 @@ pipeline {
 
       }
       steps {
-        sh 'python -m /DBR_STOOLS-916/master.py'
+        sh 'python --version'
+        sh 'ls'
       }
     }
     stage('Test') {
